@@ -52,7 +52,7 @@ const messageObj = ref<Message | null>()
 const messageArray = ref<Message[]>([]);
 const usersArray = ref<User[]>([])
 const box = useTemplateRef('box')
-const socket = new WebSocket("wss://indigo04.github.io/chat-app/api");
+const socket = new WebSocket("wss://indigo04.github.io/chat-app");
 
 socket.onopen = () => {
   console.log('Connected')

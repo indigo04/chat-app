@@ -14,7 +14,7 @@ const app = express();
 app.use(express.json());
 app.use(cors({
   credentials: true,
-  origin: 'https://indigo04.github.io/chat-app'
+  origin: 'https://indigo04.github.io/chat-app/'
 }));
 app.use(cookieParser());
 app.use(errorMiddleware);
