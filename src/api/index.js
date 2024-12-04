@@ -13,7 +13,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-  origin: 'http://185.199.111.153:443',
+  origin: 'https://indigo04.github.io',
   credentials: true,
 }));
 app.use(cookieParser());
