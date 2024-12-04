@@ -8,13 +8,13 @@ import { messageRouter } from './routes/message.route.js';
 import cookieParser from 'cookie-parser';
 import { WebSocketServer } from 'ws';
 
-const PORT = process.env.PORT || 3005;
+const PORT = process.env.PORT || 5000;
 const app = express();
 
 app.use(express.json());
 app.use(cors({
+  origin: 'http://localhost:5173',
   credentials: true,
-  origin: 'https://indigo04.github.io/chat-app/'
 }));
 app.use(cookieParser());
 app.use(errorMiddleware);
