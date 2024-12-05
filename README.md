@@ -9,7 +9,7 @@
 See [Vite Configuration Reference](https://vite.dev/config/).
 
 ## Technologies
-### Html/Css/Sass/Bulma/Js/Vue/Axios/Nodejs/Express/PostgreSQL/Sequelize
+### Html/Css/Sass/Bulma/Js/Vue/Axios/Nodejs/Express/PostgreSQL/Sequelize/Websocket
 
 ## Project Setup
 
