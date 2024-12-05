@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-axios.defaults.baseURL = 'https://indigo04.github.io/chat-app/'
+axios.defaults.baseURL = 'http://localhost:5000'
 axios.defaults.withCredentials = true
 
 type AuthProps = {

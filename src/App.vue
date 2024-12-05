@@ -52,7 +52,7 @@ const messageObj = ref<Message | null>()
 const messageArray = ref<Message[]>([]);
 const usersArray = ref<User[]>([])
 const box = useTemplateRef('box')
-const socket = new WebSocket("wss://indigo04.github.io/chat-app");
+const socket = new WebSocket("ws://localhost:5000");
 
 socket.onopen = () => {
   console.log('Connected')
@@ -552,11 +552,11 @@ const removeMessage = async (message: Message) => {
                   </div>
                   <div class="control">
                     <button class="button is-primary" :class="isLoading ? 'is-loading' : ''" type="submit"
-                      :disabled="isLoading" v-if="editing">
+                      :disabled="isLoading || message.length === 0" v-if="editing">
                       Edit
                     </button>
                     <button class="button is-primary" :class="isLoading ? 'is-loading' : ''" type="submit"
-                      :disabled="isLoading" v-else>
+                      :disabled="isLoading || message.length === 0" v-else>
                       Send
                     </button>
                   </div>
